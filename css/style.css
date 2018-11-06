@@ -1,0 +1,20 @@
+.room {
+  display: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 50%;
+  font-size: 20px;
+  color: green;
+}
+
+pre {
+  color: green;
+  text-align: left;
+  margin-left: 25%;
+  font-size: 15px;
+}

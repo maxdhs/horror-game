@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <title>Horror Game</title>
+  </head>
+  <body>
+    
+    <div id="room0" class="room">
+      <pre>        
+          *         .              *            _.---._      
+                        ___   .            ___.'       '.   *
+   .              _____[LLL]______________[LLL]_____     \
+                 /     [LLL]              [LLL]     \     |
+                /____________________________________\    |    .
+                 )==================================(    /
+.      *         '|I .-. I .-. I .--. I .-. I .-. I|'  .'
+             *    |I |+| I |+| I |. | I |+| I |+| I|-'`       *
+                  |I_|+|_I_|+|_I_|__|_I_|+|_I_|+|_I|      .
+         .       /_I_____I_____I______I_____I_____I_\
+                  )================================(   *
+  *         _     |I .-. I .-. I .--. I .-. I .-. I|          *
+           |u|  __|I |+| I |+| I |>| I |+| I |+| I|    _         .
+      __   |u|_|uu|I |+| I |+| I |~ | I |+| I |+| I| _ |U|     _
+  .  |uu|__|u|u|u,|I_|+|_I_|+|_I_|__|_I_|+|_I_|+|_I||n|| |____|u|
+     |uu|uu|_,.-' /I_____I_____I______I_____I_____I\`'-. |uu u|u|__
+     |uu.-'`      #############(______)#############    `'-. u|u|uu|
+    _.'`              ~"^"~   (________)   ~"^"^~           `'-.|uu|
+ ,''          .'    _                             _ `'-.        `'-.
+
+  </pre>
+      <p id= "text">You wake up in the middle of the night to a loud crash. You immediately realize that you have to pee. What do you do?</p>
+      <button id="room0toRoom1">Look outside to check the noise</button>
+      <button id="GameOver">Go to the bathroom, come back to your room and go to bed.</button>
+    </div>
+
+    <div id="gameOver" class="room">
+        <p>You have died. Resuscitate from first breath?</p>
+        <button id="gameOverToRoom0">Yes</button>
+    </div>
+
+    <div id="room1" class="room">
+      <p>Looking out the window, you see a figure standing next to fallen trash cans. The figure is holding an axe. He turns around and stare at you. What is your first reaction?</p>
+      <button id="room1toRoom2">Run to your parents room.</button>
+      <button id="room1toRoom2-damage">Call 911</button>
+    </div>
+
+    <div id="room2" class="room">
+      <p>You run to your parents room and find that the door is locked and nobody is in there. You hear the man rattling the door trying to break into the front door. What do you do? </p>
+      <button id="room2toRoom3-damage">Run around in cricels yelling</button>
+      <button id="room2toRoom3">Run to the attic to hide. </button>
+      <button id="room2toRoom3">Run back to your room to hide underneath the bed.</button>
+      <button id="room2toRoom3">Scream until blue</button>
+    </div>
+
+    <div id="room2-damage" class="room">
+        <p>You tried using the phone and found that there was no service. You started to freak out, had a panic attack, passed out and hit your head on a nightstand.</p>
+        <button id="room2toRoom3">You lost 1 health point. Do you want to continue the story? </button>
+    </div>
+
+    <div id="room3" class="room">
+        <p>Hear door broken down by an axe. You wait until the man goes into your bedroom.</p>
+        <button id="room3toRoom4-damage">Run around in cricels yelling</button>
+        <button id="room3toRoom4">Quietly Sneak Down to 1st Floor</button>
+        <button id="room3toRoom4">Run out of Attic Window</button>
+        <button id="room3toGameOver">Hide under Bed</button>
+      </div>
+
+  </body>
+</html>
